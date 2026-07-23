@@ -46,4 +46,73 @@ button {
 button:hover {
     background-color: green;
 }
-    
+
+nav{
+    background-color: darkblue;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+   
+nav a:hover {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
+
+.card-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    min-height:180px;
+    background: whit;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px
+rgba(0,0,0,0.2)
+}
+
+h1{
+    text-align:center;
+    margin: 30px 0;
+    color:darkblue;
+
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.card:hover{
+    transform: translater(-8px);
+    transition:0.3s;
+    box-shadow:0 8px 20px
+rgba(0,0,0,0.3);
+}
+
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    background:green;
+    cursor:pointer;
+}
