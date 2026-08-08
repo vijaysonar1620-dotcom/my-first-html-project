@@ -85,7 +85,7 @@ footer {
 
 .card{
     width:250px;
-    min-height:220px;
+    min-height:180px;
     height: auto;
     background: white;
     padding:20px;
@@ -109,6 +109,8 @@ footer{
     text-align: center;
     margin-top: 30px;
     padding: 20px;
+    background-color: darkblue;
+    color: white;
 }
 
 .card:hover{
@@ -123,7 +125,7 @@ button{
 }
 
 button:hover{
-    background:gresen;
+    background:darkgreen;
     cursor:pointer;
 }
 
@@ -139,13 +141,13 @@ button:hover{
     border: 4px solid darkblue;
 }
 
-.profile h2{ 
+ .profile h2{ 
     margin: 10px;
     color: darkblue;
 }
 .hero{
     text-align:center;
-    padding:40px;
+    padding:50px 20px;
 }
 
 .hero h1{
@@ -160,6 +162,9 @@ button:hover{
 .hero p{
     font-size:18px;
     color:#555;
+    max-width:600px;
+    margin: 15px auto 25px;
+    line-height:1.6;
 }
 
 .card{
@@ -191,5 +196,96 @@ html{
 
 html{
     scroll-behavior:smooth;
+}
+
+@media(max-width: 768px){
+    .card-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .project-card{
+        width:auto;
+    }
+
+.card{
+    width: auto;
+}
+    nav{
+        flex-direction: column;
+        gap:15px;
+    }
+}
+.contact {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+    color: darkblue;
+}
+
+.contact a{
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.contact a:hover{
+    text-decoration: underline;
+}
+
+.projects{
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.projects h2{
+    color: darkgreen;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    min-height: 160px;
+    text-align: center;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3{
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    color: grey;
+    line-height: 1.5;
+}
+
+.project-card strong{
+    color: darkblue;
 }
 
