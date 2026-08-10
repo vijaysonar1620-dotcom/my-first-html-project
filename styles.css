@@ -76,11 +76,13 @@ footer {
 }
 
 .card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display: flex;
+    gap: 30px;
     margin: 40px auto;
     width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -95,6 +97,7 @@ footer {
     box-shadow: 0 4px 10px
 rgba(0,0,0,0.1);
     margin: 20px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -156,7 +159,7 @@ button:hover{
 }
 
 .hero h2{
-    color:#16a34;
+    color: #16a34a;
 }
 
 .hero p{
@@ -254,9 +257,11 @@ html{
 }
 
 .project-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .project-card{
